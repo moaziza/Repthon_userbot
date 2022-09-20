@@ -17,8 +17,7 @@ from . import BOTLOG, get_user_from_event
 
 plugin_category = "admin" 
 
-# Copyright (C) 2021 JepThon TEAM
-# FILES WRITTEN BY  @lMl10l
+
 
 @jepiq.ar_cmd(
     pattern="قفل (.*)",
