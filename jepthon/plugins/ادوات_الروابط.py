@@ -1,5 +1,4 @@
-# Copyright (C) 2021 JepThon TEAM
-# FILES WRITTEN BY  @lMl10l
+
 
 import requests
 from validators.url import url
@@ -82,7 +81,7 @@ async def _(event):
     else:
         await edit_or_reply(event, "⌯︙ هـنالك شي خطـا حاول لاحقـا")
 
-# urltools for jepiq
+
   
 @jepiq.ar_cmd(
     pattern="اخفاء(?:\s|$)([\s\S]*)",
