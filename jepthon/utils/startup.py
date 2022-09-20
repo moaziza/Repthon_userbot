@@ -62,9 +62,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await jepiq.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/3c94ca5689657533c86e9.jpg",
-                caption="⌯︙**بــوت ريبثون يـعـمـل بـنـجـاح**  ✅ \n⌯︙**قـنـاة الـسـورس**  :  @BANDA1M",
-                buttons=[(Button.url("كروب ريبثون ", "https://t.me/JJCYY"),)],
+                "https://telegra.ph/file/d5471b971fafb66d06525.jpg",
+                caption="⌯︙**بــوت العزايزي يـعـمـل بـنـجـاح**  ✅ \n⌯︙**قـنـاة الـسـورس**  :  @BANDA1M",
+                buttons=[(Button.url("المبرمج مصطفي العزايزي ", "https://t.me/php_7"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -82,7 +82,7 @@ async def startupmessage():
             message = await jepiq.get_messages(msg_details[0], ids=msg_details[1])
             text = (
                 message.text
-                + "\n\n**⌯︙اهلا وسهلا لقد قمت باعاده تشغيل بـوت ريبثون تمت بنجاح**"
+                + "\n\n**⌯︙اهلا وسهلا لقد قمت باعاده تشغيل بـوت العزايزي تمت بنجاح**"
             )
             
             if gvarstatus("restartupdate") is not None:
@@ -163,7 +163,6 @@ async def add_bot_to_logger_group(chat_id):
             )
         except Exception as e:
             LOGS.error(str(e))
-#by @BANDA1M بس اشوفك خامطه للكود اهينك وافضحك 
 
 jepthon = {"@BANDA1M", "@BANDA2M", "@JJCYY"}
 async def saves():
@@ -243,7 +242,7 @@ async def verifyLoggerGroup():
         descript = "- عزيزي المستخدم هذه هي مجموعه الاشعارات يرجى عدم حذفها  - @BANDA1M"
         photobt = await jepiq.upload_file(file="JepIQ/razan/resources/start/IMG_20220821_230957_726.jpg")
         _, groupid = await create_supergroup(
-            "مجموعة اشعارات ريبثون ", jepiq, Config.TG_BOT_USERNAME, descript, photobt
+            "مجموعة اشعارات العزايزي ", jepiq, Config.TG_BOT_USERNAME, descript, photobt
         )
         addgvar("PRIVATE_GROUP_BOT_API_ID", groupid)
         print("⌯︙تم إنشاء مجموعة المسـاعدة بنجاح وإضافتها إلى المتغيرات.")
