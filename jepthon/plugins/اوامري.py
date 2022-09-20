@@ -10,7 +10,7 @@ from ..core import check_owner
 from ..Config import Config
 
 JEP_IC = "https://telegra.ph/file/e29699aa7b32a802c6d8e.jpg"
-ROE = "**⌔  هـذه هي قائمة اوامـر سـورس العزايزي ⌔ **"
+ROE = "**⌔  هـذه هي قائمة اوامـر سـوههههههرس العزايزي ⌔ **"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 
