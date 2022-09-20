@@ -9,8 +9,8 @@ from jepthon import jepiq
 from ..core import check_owner
 from ..Config import Config
 
-JEP_IC = "https://telegra.ph/file/3c94ca5689657533c86e9.jpg"
-ROE = "**⌔  هـذه هي قائمة اوامـر سـورس ريبثون ⌔ **"
+JEP_IC = "https://telegra.ph/file/e29699aa7b32a802c6d8e.jpg"
+ROE = "**⌔  هـذه هي قائمة اوامـر سـورس العزايزي ⌔ **"
 
 if Config.TG_BOT_USERNAME is not None and tgbot is not None:
 
@@ -93,7 +93,7 @@ async def _(event):
     buttons = [
     [
       Button.inline("- التالي .", data="jrzst"),
-      Button.inline("القائمة الرئيسية", data="ROE"),]]
+      Button.inline("القائمة الرئيسية", data="BBACK"),]]
     await event.edit(ROZADM, buttons=buttons)
 
 @jepiq.tgbot.on(CallbackQuery(data=re.compile(rb"jrzst")))
